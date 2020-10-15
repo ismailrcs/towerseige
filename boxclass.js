@@ -39,5 +39,22 @@ class Box  {
  
  
  };
-  
+ 
+ 
+ function score(){
+
+
+  if(this.Visiblity < 0){
+
+  score++
+
+    
+  }
+
+
+
+
+
+ }
+
   

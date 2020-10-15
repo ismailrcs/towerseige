@@ -66,6 +66,23 @@ function draw() {
   box11.display();
   box12.display();
   
+  box1.score();
+  box2.score();
+  box3.score();
+  box4.score();
+  box5.score();
+  box6.score();
+  
+  box7.score();
+  box8.score();
+  box9.score();
+  box10.score();
+  box11.score();
+  box12.score();
+
+
+
+
   
   slingshot.display();
   
@@ -94,3 +111,49 @@ function keyPressed(){
       slingshot.attach(polygon.body);
   }
 }
+
+
+
+
+
+async function getbackground(){
+
+  var result = await fetch("http://www.worldtimeapi.org/api/timezone/Asia/Tokyo");
+  
+  var resultJson =  await result.json();
+
+  console.log(resultJson);
+
+ var daytime = resultJson.datetime;
+
+ console.log(daytime);
+
+ var hour = daytime.slice(11,13);
+
+ console.log(hour);
+
+
+ if(hour > 6 && hour < 18 ){
+
+ 
+   backgroundImg = loadImage("blue");
+
+
+ }
+
+ else {
+
+
+   backgroundImg = loadImage("black");
+
+
+
+
+ }
+
+}
+
+
+
+
+
