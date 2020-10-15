@@ -19,6 +19,8 @@ function setup(){
     pltfrm2 = new Ground(1000,height+150,125,20);
 
 
+  
+  polygon = new Polygon(100,200)
 
     box1 = new Box(500,height+75,50,50);
     box2 = new Box(550,height+75,50,50);
